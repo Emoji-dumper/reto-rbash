@@ -7,7 +7,7 @@ echo $USER > /tmp/i
 
 # set the flag
 sudo mkdir /home/a
-sh -c 'md5sum /bin/bash' > /home/a/flag.txt
+sh -c 'sudo md5sum /bin/bash' > /home/a/flag.txt
 sudo chown -R $(cat /tmp/i):$(cat /tmp/i) /home/a
 
 # change the shell
